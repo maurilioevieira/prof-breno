@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cursos | Curso Prof. Breno Bernardo</title>
+  <meta name="description" content="Catálogo de cursos do Prof. Breno Bernardo: materiais em PDF, videoaulas e turmas ao vivo para concursos.">
+
+  <!-- Prévia do link quando compartilhado no WhatsApp / Instagram / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Curso Prof. Breno Bernardo">
+  <meta property="og:description" content="Estude o que cai. Do jeito que fixa. Materiais, questões comentadas e aulas online.">
+  <meta property="og:image" content="img/compartilhar.jpg">
+  <meta name="theme-color" content="#111111">
+
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,700;0,800;1,800;1,900&family=Figtree:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-pagina="catalogo">
+
+  <div id="aviso"></div>
+  <header id="cabecalho"></header>
+
+  <main>
+    <!-- CATÁLOGO: todos os cards vêm do js/dados.js.
+         Endereços úteis para divulgar:
+           cursos.html              → todos
+           cursos.html?tipo=pdf     → só materiais em PDF
+           cursos.html?tipo=video   → só videoaulas
+           cursos.html?tipo=aovivo  → só turmas ao vivo -->
+    <section class="cabeca-pagina">
+      <div class="container">
+        <div class="sobretitulo">Catálogo</div>
+        <h1 class="titulo-impacto" id="catalogo-titulo">Todos os cursos</h1>
+        <p>Escolha o formato, veja os detalhes e fale direto com o professor pelo WhatsApp.</p>
+      </div>
+    </section>
+    <section class="secao" style="padding-top:48px">
+      <div class="container">
+        <div class="filtros" id="filtros-catalogo" role="group" aria-label="Filtrar por formato" style="margin-bottom:28px"></div>
+        <div class="grade-cursos" id="lista-catalogo"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="rodape"></footer>
+
+  <!-- A ordem importa: primeiro os dados, depois o motor. -->
+  <script src="js/config.js"></script>
+  <script src="js/dados.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
